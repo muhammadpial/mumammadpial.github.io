@@ -1,0 +1,186 @@
+
+.all-items{
+	overflow-x:hidden;
+}
+
+/*
+========================
+Header Area Starts
+========================
+*/
+header{
+	
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-light {
+    background-color: #72a0c794!important;
+}
+.header-items{
+	padding-right: 3.5rem;
+}
+.header-items>ul>li{
+	padding-right: 2rem;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.logo{
+	max-height: 3rem;
+	padding-left: 4rem;
+}
+
+/*====================
+Carousel Area
+=========================
+*/
+
+.carousel-inner{
+	max-height: 41.75rem;
+}
+
+/*=============================
+Latest Prodct Area
+==============================*/
+
+.latest-product-head{
+	padding-top: 10rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	
+}
+.multi-column-carousel{
+	height:16.875rem;
+	width:28.75rem;
+	padding-right:.75rem;
+	padding-left: .75rem;
+}
+
+
+/*==================================
+Product Categories Area
+=====================================*/
+
+.product-category-head{
+	text-align: center;
+	padding-top: 10rem;
+	padding-bottom: 3rem;
+}
+.product-category-image{
+	height:20rem;
+	width:28.75rem;
+	padding-bottom: 1.5rem;
+}
+
+/*===================================
+User Review Area
+====================================*/
+
+.user-review{
+	padding-top:6.875rem;
+	padding-bottom: 15rem;
+	
+}
+.ur-1>img{
+	
+}
+.ur-1>h6{
+	position: absolute;
+	bottom: -.5rem;
+	 left: 4.8rem;
+	right:auto;
+	border: 2px solid silver;
+	background-color: silver;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	border-radius: 25%;
+}
+
+.ur-2>img{
+	position:absolute;
+	top:53px;
+	right:0px;
+	left:617px;
+	bottom:0px;
+}
+.ur-2>h6{
+	position: absolute;
+	bottom: -7.5rem;
+	 left: 4.8rem;
+	right:auto;
+	border: 2px solid silver;
+	background-color: silver;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	border-radius: 25%;
+}
+
+
+/*====================================
+Owner say Area starts
+====================================*/
+
+.owners-say{
+	margin-top: 5rem;
+	background-image:url(images/bg/ownersay.jpg);
+	height: 18.5rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.quote>h5{
+	text-align: center;
+	padding-top: 8rem;
+	
+}
+
+/*======================================
+Footer Area Starts
+=====================================*/
+.footer{
+	background-color: black;
+	height: 20.5rem;
+	
+}
+.footer-list{
+	 padding-top: 3rem;
+}
+.footer-list>li{
+	list-style: none;
+	padding-top:1rem;
+}
+.footer-logo>img{
+	text-align: center;
+	padding-top:8rem;
+	padding-left: 3rem;
+}
+.follow-us>h4{
+	padding-top:8rem;
+	color:white;
+	text-align: center;
+}
+.follow-us>ul>li{
+	list-style:none;
+	display: inline-block;
+	text-align: center;
+	padding-right: .5rem;
+}
+.follow-us>ul{
+	
+	text-align: center;
+	font-size: 1.75rem;
+}
+.right>h6{
+	color:white;
+	text-align:center;
+}

@@ -1,0 +1,49 @@
+/*
+========================
+Header Area Starts
+========================
+*/
+header{
+	
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-light {
+    background-color: #72a0c794!important;
+}
+.header-items{
+	padding-right: 3.5rem;
+}
+.header-items>ul>li{
+	padding-right: 2rem;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.logo{
+	max-height: 3rem;
+	padding-left: 4rem;
+}
+/*=================================
+Container Pic Area
+===================================*/
+.container-pic{
+	background-image: url(images/container-pic/container-pic.jpg);
+	height: 20rem;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+
+/*==================================
+Side Bar Area
+===============================*/
+
+
