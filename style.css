@@ -37,6 +37,60 @@ header{
 	padding-left: 4rem;
 }
 
+/*-------------------------dropdown-----------*/
+
+.dropdown-menu{
+	margin-top: .8rem;
+}
+.dropdown-submenu>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 14rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 10rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 83%;
+	top: -0;
+}
+.dropdown-submenu>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+}
+.dropdown-submenu>ul>li:hover{
+	background-color: #45BE9B;
+}
+.dropdown-submenu>ul>li>ul>li{
+	background-color: #FFFFFF;
+}
+.dropdown-submenu>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
+
+
+
 /*====================
 Carousel Area
 =========================

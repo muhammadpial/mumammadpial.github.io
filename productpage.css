@@ -31,6 +31,59 @@ header{
 	max-height: 3rem;
 	padding-left: 4rem;
 }
+
+
+*-------------------------dropdown-----------*/
+
+.dropdown-menu{
+	margin-top: .8rem;
+}
+.dropdown-submenu>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 14rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 10rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 83%;
+	top: -0;
+}
+.dropdown-submenu>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+}
+.dropdown-submenu>ul>li:hover{
+	background-color: #45BE9B;
+}
+.dropdown-submenu>ul>li>ul>li{
+	background-color: #FFFFFF;
+}
+.dropdown-submenu>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
 /*=================================
 Container Pic Area
 ===================================*/
@@ -46,4 +99,86 @@ Container Pic Area
 Side Bar Area
 ===============================*/
 
+
+.side-nav{
+	padding-top: 4rem;
+	
+}
+
+.side-bar{
+	
+}
+.side-bar>ul{
+	padding-left:0px;
+}
+
+.side-bar>ul>li{
+	list-style: none;
+	border-bottom:solid 2px #fff;
+	background-color: #1B7397;
+	padding-left: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 14rem;
+	border-right:solid 2px rgba(235,169,28,1.00);
+	position:relative;
+}
+.side-bar>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+}
+.side-bar>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 83%;
+	top: -0;
+}
+.side-bar>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+	
+}
+.side-bar>ul>li:hover{
+	background-color: #45BE9B;
+}
+.side-bar>ul>li>ul>li{
+	list-style: none;
+	padding-top: 1rem;
+	padding-left: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #1B7397;
+	width: 14rem;
+	border-bottom:solid 2px #fff;
+	border-right:solid 2px rgba(235,169,28,1.00);
+}
+.side-bar>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
+.side-bar>ul>li>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.product-list-img{
+	padding-bottom: 4rem;
+}
+.product-list-img>a>img{
+	width:16.5rem;
+	height: 12.5rem;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 3rem;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
 
