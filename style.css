@@ -39,7 +39,7 @@ header{
 
 /*-------------------------dropdown-----------*/
 
-..dropdown-menu{
+.dropdown-menu{
 	margin-top: .8rem;
 }
 .dropdown-submenu>ul>li{

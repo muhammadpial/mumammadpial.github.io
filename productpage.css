@@ -110,6 +110,11 @@ Side Bar Area
 }
 .side-bar>ul{
 	padding-left:0px;
+	
+}
+.side-bar>ul>li:first-child{
+	background-color: darkorange;
+	text-align: justify;
 }
 
 .side-bar>ul>li{
@@ -122,6 +127,7 @@ Side Bar Area
 	width: 14rem;
 	border-right:solid 2px rgba(235,169,28,1.00);
 	position:relative;
+	border-radius: 5% 5% 0 0;
 }
 .side-bar>ul>li>a{
 	color: #fff;
@@ -163,22 +169,36 @@ Side Bar Area
 	text-decoration: none;
 }
 
+
+
+
+
 .product-list-img{
 	padding-bottom: 4rem;
+	overflow: hidden;
+}
+.product-list-img:hover img{
+	transform: scale(1.4);
+	overflow: hidden;
+	transition-duration: .75s;
 }
 .product-list-img>a>img{
 	width:16.5rem;
 	height: 12.5rem;
 }
 .carousel-caption {
-    position: absolute;
+    position: relative;
     right: 15%;
-    bottom: 3rem;
-    left: 15%;
+    bottom: 0rem;
+    left: 0%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #fff;
+    color: #000;
     text-align: center;
+    background-color: gainsboro;
+    width: 16.5rem;
 }
+
+
 
