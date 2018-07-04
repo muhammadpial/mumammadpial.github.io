@@ -104,6 +104,15 @@ Side Bar Area
 	padding-top: 4rem;
 	
 }
+.product-title{
+	margin-left:18rem;
+}
+.hr hr{
+	
+	width:51.75rem;
+	color: #1B7397;
+	    border-top: 1.5px solid #1B7397;
+}
 
 .side-bar{
 	
@@ -196,7 +205,7 @@ Side Bar Area
     padding-bottom: 20px;
     color: #000;
     text-align: center;
-    background-color: gainsboro;
+    background-color: #f3f1f2;
     width: 16.5rem;
 }
 

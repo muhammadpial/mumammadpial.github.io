@@ -1,3 +1,8 @@
+body{
+	overflow-x: hidden;
+}
+
+
 /*
 ========================
 Header Area Starts
@@ -84,16 +89,19 @@ header{
 .dropdown-submenu>ul>li>ul>li:hover{
 	background-color: #EE735F;
 }
-/*=================================
-Container Pic Area
-===================================*/
-.container-pic{
-	background-image: url(images/container-pic/container-pic.jpg);
-	height: 20rem;
-	background-size:cover;
-	background-repeat: no-repeat;
+/*=====================================
+product title area
+=======================================*/
+.product-title hr{
+	width:35rem;
+	text-align: left;
+	float: left;
+	padding-bottom: 1rem;
 }
-
+.product-spec hr{
+	
+	padding-bottom: 1rem;
+}
 
 /*==================================
 Side Bar Area
@@ -103,6 +111,10 @@ Side Bar Area
 .side-nav{
 	padding-top: 4rem;
 	
+}
+.side-nav .container-fluid{
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 .side-bar{
@@ -170,7 +182,35 @@ Side Bar Area
 }
 
 
+/*======================================
+Image gallery 
+=========================================*/
 
+
+ .imgStyle{
+            width:8.125rem;
+            height:6.25rem;
+            border:3px solid rgba(235,169,28,1.00);
+	 margin-top: 1.5rem;
+	 margin-right:.5rem;
+        }
+#mainImage{
+	border:2px solid #1B7397;
+	height:28rem; 
+	width:35rem;
+}
+.image-gallery{
+	text-align: left;
+}
+
+
+
+/*===================================
+similar products
+=============================*/
+.similar-products{
+	margin-top: 15rem;
+}
 
 
 .product-list-img{
@@ -200,13 +240,11 @@ Side Bar Area
     width: 16.5rem;
 }
 
-
-
 /*======================================
 Footer Area Starts
 =====================================*/
 .footer{
-	margin-top: 20rem;
+	margin-top: 15rem;
 	background-color: black;
 	height: 20.5rem;
 	
@@ -244,6 +282,3 @@ Footer Area Starts
 	color:white;
 	text-align:center;
 }
-
-
-
