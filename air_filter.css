@@ -1,0 +1,258 @@
+/*
+========================
+Header Area Starts
+========================
+*/
+header{
+	
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-light {
+    background-color: #72a0c794!important;
+}
+.header-items{
+	padding-right: 3.5rem;
+}
+.header-items>ul>li{
+	padding-right: 2rem;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.logo{
+	max-height: 3rem;
+	padding-left: 4rem;
+}
+
+
+/*-------------------------dropdown-----------*/
+
+.dropdown-menu{
+	margin-top: .8rem;
+}
+.dropdown-submenu>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 14rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul>li{
+	list-style: none;
+	padding-left: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 10rem;
+	position:relative;
+}
+.dropdown-submenu>ul>li>ul>li>a{
+	text-decoration: none;
+	color: #000;
+}
+.dropdown-submenu>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 83%;
+	top: -0;
+}
+.dropdown-submenu>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+}
+.dropdown-submenu>ul>li:hover{
+	background-color: #45BE9B;
+}
+.dropdown-submenu>ul>li>ul>li{
+	background-color: #FFFFFF;
+}
+.dropdown-submenu>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
+/*=================================
+Container Pic Area
+===================================*/
+.container-pic{
+	background-image: url(images/container-pic/container-pic.jpg);
+	height: 20rem;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+
+/*==================================
+Side Bar Area
+===============================*/
+
+
+.side-nav{
+	padding-top: 4rem;
+	
+}
+.product-title{
+	margin-left:18rem;
+}
+.hr hr{
+	
+	width:51.75rem;
+	color: #1B7397;
+	    border-top: 1.5px solid #1B7397;
+}
+
+.side-bar{
+	
+}
+.side-bar>ul{
+	padding-left:0px;
+	
+}
+.side-bar>ul>li:first-child{
+	background-color: darkorange;
+	text-align: justify;
+}
+
+.side-bar>ul>li{
+	list-style: none;
+	border-bottom:solid 2px #fff;
+	background-color: #1B7397;
+	padding-left: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 14rem;
+	border-right:solid 2px rgba(235,169,28,1.00);
+	position:relative;
+	border-radius: 5% 5% 0 0;
+}
+.side-bar>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+}
+.side-bar>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 83%;
+	top: -0;
+}
+.side-bar>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+	
+}
+.side-bar>ul>li:hover{
+	background-color: #45BE9B;
+}
+.side-bar>ul>li>ul>li{
+	list-style: none;
+	padding-top: 1rem;
+	padding-left: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #1B7397;
+	width: 14rem;
+	border-bottom:solid 2px #fff;
+	border-right:solid 2px rgba(235,169,28,1.00);
+}
+.side-bar>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
+.side-bar>ul>li>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+.product-list-img{
+	padding-bottom: 4rem;
+	overflow: hidden;
+}
+.product-list-img:hover img{
+	transform: scale(1.4);
+	overflow: hidden;
+	transition-duration: .75s;
+}
+.product-list-img>a>img{
+	width:16.5rem;
+	height: 12.5rem;
+}
+.carousel-caption {
+    position: relative;
+    right: 15%;
+    bottom: 0rem;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: center;
+    background-color: #f3f1f2;
+    width: 16.5rem;
+}
+
+
+
+/*======================================
+Footer Area Starts
+=====================================*/
+.footer{
+	margin-top: 20rem;
+	background-color: black;
+	height: 20.5rem;
+	
+	
+}
+.footer-list{
+	 padding-top: 3rem;
+}
+.footer-list>li{
+	list-style: none;
+	padding-top:1rem;
+}
+.footer-logo>img{
+	text-align: center;
+	padding-top:8rem;
+	padding-left: 3rem;
+}
+.follow-us>h4{
+	padding-top:8rem;
+	color:white;
+	text-align: center;
+}
+.follow-us>ul>li{
+	list-style:none;
+	display: inline-block;
+	text-align: center;
+	padding-right: .5rem;
+}
+.follow-us>ul{
+	
+	text-align: center;
+	font-size: 1.75rem;
+}
+.right>h6{
+	color:white;
+	text-align:center;
+}
+
+
+
