@@ -154,7 +154,6 @@ Side Bar Area
 	list-style: none;
 	padding-top: 1rem;
 	padding-left: .5rem;
-	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background-color: #1B7397;
 	width: 14rem;
@@ -164,7 +163,43 @@ Side Bar Area
 .side-bar>ul>li>ul>li:hover{
 	background-color: #EE735F;
 }
+
 .side-bar>ul>li>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+}
+.side-bar>ul>li>ul>li>ul{
+	transition: all 0.3s;
+	opacity: 0;
+	visibility:hidden;
+	position: absolute;
+	left: 85%;
+	top: -0;
+}
+.side-bar>ul>li>ul>li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
+	
+}
+.side-bar>ul>li>ul>li:hover{
+	background-color: #45BE9B;
+}
+
+.side-bar>ul>li>ul>li>ul>li{
+	list-style: none;
+	padding-top: 1rem;
+	padding-left: .5rem;
+	padding-bottom: 1rem;
+	background-color: #1B7397;
+	width: 14rem;
+	border-bottom:solid 2px #fff;
+	border-right:solid 2px rgba(235,169,28,1.00);
+}
+.side-bar>ul>li>ul>li>ul>li:hover{
+	background-color: #EE735F;
+}
+.side-bar>ul>li>ul>li>ul>li>a{
 	color: #fff;
 	text-decoration: none;
 }
