@@ -1,6 +1,41 @@
-
+@font-face {
+	font-family: 'GothamBook';
+	src: url('fonts/GothamBook.eot');
+	src: local('GothamBook'),
+	url('fonts/GothamBook.woff') format('woff'),
+	url('fonts/GothamBook.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Exo2-Black';
+	src: url('fonts/Exo2-Black.ttf');
+	src: local('Exo2-Black'),
+	url('fonts/Exo2-Black.ttf') format('ttf'),
+	
+}
+@font-face {
+	font-family: 'Cinzel-Regular';
+	src: url('fonts/Cinzel-Regular.ttf');
+	src: local('Cinzel-Regular'),
+	url('fonts/Cinzel-Regular.ttf') format('ttf'),
+	
+}
+@font-face {
+	font-family: 'Domine-Bold';
+	src: url('fonts/Domine-Bold.ttf');
+	src: local('Domine-Bold'),
+	url('fonts/Domine-Bold.ttf') format('ttf'),
+	
+}
+@font-face {
+	font-family: 'Oswald-SemiBold';
+	src: url('fonts/Oswald-SemiBold.ttf');
+	src: local('Oswald-SemiBold'),
+	url('fonts/Oswald-SemiBold.ttf') format('ttf'),
+	
+}
 .all-items{
 	overflow-x:hidden;
+	font-family: 'GothamBook';
 }
 
 /*
@@ -18,18 +53,53 @@ header{
     padding-left: 0rem;
     margin-right: auto;
     margin-left: auto;
+	position: fixed;
+	z-index: 1000;
+
+}
+.navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+	paddding:0rem 1rem;
+}
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 1rem;
 }
 
 .bg-light {
-    background-color: #72a0c794!important;
+    background-color: rgba(112,195,242,0.91)!important;
 }
 .header-items{
 	padding-right: 3.5rem;
 }
 .header-items>ul>li{
-	padding-right: 2rem;
+	padding:.25rem 1rem;
 	font-size: 1.25rem;
-	font-weight: 500;
+	font-weight: 600;
+	font-family: Cinzel-Regular;
+	
+}
+.header-items>ul>li:hover{
+	background-color: rgba(246,139,54,1.00);
+	border-radius: 5%;
+	color: white;
 }
 
 .logo{
@@ -37,10 +107,20 @@ header{
 	padding-left: 4rem;
 }
 
+.navbar-nav>li>a>h5{
+	font-size: 1.5rem;
+}
+
 /*-------------------------dropdown-----------*/
 
 .dropdown-menu{
-	margin-top: .8rem;
+	margin-top: 0rem;
+	padding: 0rem;
+}
+.dropdown-submenu>ul{
+	padding: 0rem;
+	margin: 0rem;
+	border: 0rem;
 }
 .dropdown-submenu>ul>li{
 	list-style: none;
@@ -52,7 +132,7 @@ header{
 }
 .dropdown-submenu>ul>li>a{
 	text-decoration: none;
-	color: #000;
+	color: #1f1f1f;
 }
 .dropdown-submenu>ul>li>ul>li{
 	list-style: none;
@@ -64,7 +144,7 @@ header{
 }
 .dropdown-submenu>ul>li>ul>li>a{
 	text-decoration: none;
-	color: #000;
+	color: #1f1f1f;
 }
 .dropdown-submenu>ul>li>ul{
 	transition: all 0.3s;
@@ -80,13 +160,21 @@ header{
 	z-index: 100;
 }
 .dropdown-submenu>ul>li:hover{
-	background-color: #45BE9B;
+	background-color:#1f1f1f;
+}
+.dropdown-submenu>ul>li:hover>a{
+	background-color:#1f1f1f;
+	color:white;
 }
 .dropdown-submenu>ul>li>ul>li{
 	background-color: #FFFFFF;
 }
 .dropdown-submenu>ul>li>ul>li:hover{
-	background-color: #EE735F;
+	background-color: #1f1f1f;
+}
+.dropdown-submenu>ul>li>ul>li:hover>a{
+	background-color: #1f1f1f;
+	color: white;
 }
 
 
@@ -97,17 +185,43 @@ Carousel Area
 */
 
 .carousel-inner{
-	max-height: 41.75rem;
+	max-height: 47.5rem;
 }
+.single_carousel>img{
+	height: 47.5rem;
+	padding-top: 3.8rem;
+	
+}
+
 
 /*=============================
 Latest Prodct Area
 ==============================*/
-
+.product_area{
+	background-image: url(images/bg/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+.multi_carousel_area{
+	background: rgba(237,234,234,0.65);
+}
 .latest-product-head{
 	padding-top: 10rem;
 	padding-bottom: 3rem;
 	text-align: center;
+}
+.latest-product-head>h1 {
+   background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 30rem;
+    margin-left: 28rem;
+    line-height: 3.5rem;
+    border-radius: .8;
+    border: .25rem solid #000000;
+	font-family: Oswald-SemiBold;
+	font-size: 3rem;
 	
 }
 .multi-column-carousel{
@@ -117,6 +231,14 @@ Latest Prodct Area
 	padding-left: .75rem;
 }
 
+.img-thumbnail {
+    padding: .25rem;
+    background-color: transparent; 
+   	border: none; 
+    border-radius: .25rem;
+    
+    
+}
 
 /*==================================
 Product Categories Area
@@ -124,18 +246,36 @@ Product Categories Area
 
 .product-category-head{
 	text-align: center;
-	padding-top: 10rem;
+	
 	padding-bottom: 3rem;
+}
+.product-category-head>h1 {
+    background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 30rem;
+    margin-left: 28rem;
+    line-height: 3.5rem;
+    border-radius: .8;
+    border: .25rem solid #000000;
+	font-family: Oswald-SemiBold;
+	font-size: 3rem;
+	
 }
 .product-category-image{
 	height:20rem;
 	width:28.75rem;
 	padding-bottom: 1.5rem;
+	
+}
+.product-category{
+	padding-bottom: 5rem;
+	background: rgba(237,234,234,0.65);
+	padding-top: 10rem;
 }
 
 /*===================================
 User Review Area
-====================================*/
+
 
 .user-review{
 	padding-top:6.875rem;
@@ -179,11 +319,11 @@ User Review Area
 	padding-left: .5rem;
 	border-radius: 25%;
 }
-
+====================================*/
 
 /*====================================
 Owner say Area starts
-====================================*/
+
 
 .owners-say{
 	margin-top: 5rem;
@@ -191,19 +331,20 @@ Owner say Area starts
 	height: 18.5rem;
 	background-size: cover;
 	background-repeat: no-repeat;
+	
 }
 .quote>h5{
 	text-align: center;
 	padding-top: 8rem;
 	
 }
+====================================*/
 
 /*======================================
 Footer Area Starts
 =====================================*/
 .footer{
-	background-color: black;
-	height: 20.5rem;
+	background-color: #2F2F2F;
 	
 }
 .footer-list{
@@ -212,6 +353,11 @@ Footer Area Starts
 .footer-list>li{
 	list-style: none;
 	padding-top:1rem;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.footer-list>li>a{
+	text-decoration: none;
+	color:white;
 }
 .footer-logo>img{
 	text-align: center;
@@ -237,4 +383,62 @@ Footer Area Starts
 .right>h6{
 	color:white;
 	text-align:center;
+}
+
+
+
+
+
+/* Responsive*/
+
+@media screen 
+	and (min-width: 768px)
+	and (max-width: 1023px){
+
+		
+/*=============================
+Latest Prodct Area
+==============================*/
+
+.latest-product-head{
+	padding-top: 10rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	
+}
+.multi-column-carousel{
+	height:12rem;
+	width:28.75rem;
+	padding-right:.75rem;
+	padding-left: .75rem;
+}
+.jumbotron {
+    padding: 1rem 1rem;
+}
+		
+		
+		
+/*==================================
+Product Categories Area
+=====================================*/
+
+.product-category-head{
+	text-align: center;
+	padding-top: 10rem;
+	padding-bottom: 3rem;
+}
+.product-category-image{
+	height:16rem;
+	width:28.75rem;
+	padding-bottom: 1.5rem;
+}
+		
+		
+	.footer-logo>img{
+	text-align: center;
+	padding-top:8.5rem;
+	padding-left: 0rem;
+	 width: 100%;
+}
+
 }
