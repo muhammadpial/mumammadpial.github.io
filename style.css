@@ -19,12 +19,18 @@
 	url('fonts/Cinzel-Regular.ttf') format('ttf'),
 	
 }
-Domine-Bold.ttf
 @font-face {
 	font-family: 'Domine-Bold';
 	src: url('fonts/Domine-Bold.ttf');
 	src: local('Domine-Bold'),
 	url('fonts/Domine-Bold.ttf') format('ttf'),
+	
+}
+@font-face {
+	font-family: 'Oswald-SemiBold';
+	src: url('fonts/Oswald-SemiBold.ttf');
+	src: local('Oswald-SemiBold'),
+	url('fonts/Oswald-SemiBold.ttf') format('ttf'),
 	
 }
 .all-items{
@@ -207,17 +213,16 @@ Latest Prodct Area
 	text-align: center;
 }
 .latest-product-head>h1 {
-    background-color: #28658b;
-    opacity: 0.8;
-    margin-right: 25rem;
-    margin-left: 25rem;
-    line-height: 4.5rem;
+   background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 30rem;
+    margin-left: 28rem;
+    line-height: 3.5rem;
     border-radius: .8;
-    border: .5rem solid #f68b36;
-	color:white;
-	font-family: Domine-Bold;
-	font-weight: 500;
+    border: .25rem solid #000000;
+	font-family: Oswald-SemiBold;
 	font-size: 3rem;
+	
 }
 .multi-column-carousel{
 	height:16.875rem;
@@ -245,16 +250,16 @@ Product Categories Area
 	padding-bottom: 3rem;
 }
 .product-category-head>h1 {
-    background-color: #f68b36;
-    opacity: 0.8;
-    margin-right: 25rem;
-    margin-left: 25rem;
-    line-height: 4.5rem;
+    background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 30rem;
+    margin-left: 28rem;
+    line-height: 3.5rem;
     border-radius: .8;
-    border: .5rem solid #28658b;
-	font-family: 'Domine-Bold';
+    border: .25rem solid #000000;
+	font-family: Oswald-SemiBold;
 	font-size: 3rem;
-	font-weight: 500;
+	
 }
 .product-category-image{
 	height:20rem;
