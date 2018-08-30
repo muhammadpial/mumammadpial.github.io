@@ -239,10 +239,15 @@ Latest Prodct Area
     padding: .25rem;
     background-color: transparent; 
    	border: none; 
-    border-radius: .25rem;
-    
-    
+    border-radius: .25rem; 
 }
+
+.carousel-caption{
+	color:black;
+	background: rgba(208,208,208,0.50);
+	font-weight: 500;
+}
+
 
 /*==================================
 Wings of Rimex Area
@@ -311,73 +316,6 @@ Wings of Rimex Area
 }
 
 
-/*===================================
-User Review Area
-
-
-.user-review{
-	padding-top:6.875rem;
-	padding-bottom: 15rem;
-	
-}
-.ur-1>img{
-	
-}
-.ur-1>h6{
-	position: absolute;
-	bottom: -.5rem;
-	 left: 4.8rem;
-	right:auto;
-	border: 2px solid silver;
-	background-color: silver;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
-	padding-right: .5rem;
-	padding-left: .5rem;
-	border-radius: 25%;
-}
-
-.ur-2>img{
-	position:absolute;
-	top:53px;
-	right:0px;
-	left:617px;
-	bottom:0px;
-}
-.ur-2>h6{
-	position: absolute;
-	bottom: -7.5rem;
-	 left: 4.8rem;
-	right:auto;
-	border: 2px solid silver;
-	background-color: silver;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
-	padding-right: .5rem;
-	padding-left: .5rem;
-	border-radius: 25%;
-}
-====================================*/
-
-/*====================================
-Owner say Area starts
-
-
-.owners-say{
-	margin-top: 5rem;
-	background-image:url(images/bg/ownersay.jpg);
-	height: 18.5rem;
-	background-size: cover;
-	background-repeat: no-repeat;
-	
-}
-.quote>h5{
-	text-align: center;
-	padding-top: 8rem;
-	
-}
-====================================*/
-
 /*======================================
 Footer Area Starts
 =====================================*/
@@ -434,14 +372,34 @@ Footer Area Starts
 @media screen 
 	and (min-width: 768px)
 	and (max-width: 1023px){
-
+/*===============================
+Single carousel Area
+=================================*/
+	.carousel-inner{
+	max-height: 35rem;
+	}
+	.single_carousel>img{
+	height:35rem;
+	padding-top: 3.4rem;
+	
+	}
 		
 /*=============================
 Latest Prodct Area
 ==============================*/
-
+.latest-product-head>h1 {
+	font-family: 'Playfair Display', serif;
+   background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    line-height: 2.5rem;
+    border: .25rem solid #000000;
+	font-size: 2.5rem;
+	padding-bottom: .5rem;
+}
 .latest-product-head{
-	padding-top: 10rem;
+	padding-top: 6rem;
 	padding-bottom: 3rem;
 	text-align: center;
 	
@@ -452,33 +410,54 @@ Latest Prodct Area
 	padding-right:.75rem;
 	padding-left: .75rem;
 }
-.jumbotron {
-    padding: 1rem 1rem;
-}
+
 		
 		
 		
 /*==================================
-Product Categories Area
+Wings of Rimex Area
 =====================================*/
+.wings_rimex_head>h1 {
+	font-family: 'Playfair Display', serif;
+   background-color: #FFFFFF;
+    opacity: 1;
+    margin-right: 11rem;
+    margin-left: 11rem;
+    line-height: 3.5rem;
+    border: .25rem solid #000000;
+	font-size: 2.5rem;
+	padding-bottom: .5rem;
+}
+		.text_wings{
+	background-color: #242424;
+	color: #E4E4E4;
+	text-align: center;
+	display: block;
+    height: 16.9rem;
+    line-height:20.09rem;
+    vertical-align: middle;
+}
+.text_wings>a>h4{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	display: block;
+    height: 9.09rem;
+    line-height: 17.09rem;
+    vertical-align: middle;
+	font-size:1.0rem;
+}
+		.text_wings>a>h4:hover{
+	font-size:1.1rem;
+	transition: all .75s;
+}
 
-.product-category-head{
-	text-align: center;
-	padding-top: 10rem;
-	padding-bottom: 3rem;
-}
-.product-category-image{
-	height:16rem;
-	width:28.75rem;
-	padding-bottom: 1.5rem;
-}
+/*===========================
+Footer Area Starts
+=============================*/
 		
-		
-	.footer-logo>img{
+		.footer-logo>img{
 	text-align: center;
-	padding-top:8.5rem;
+	padding-top:8rem;
 	padding-left: 0rem;
-	 width: 100%;
 }
-
 }
