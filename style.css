@@ -6,33 +6,20 @@
 	url('fonts/GothamBook.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Exo2-Black';
-	src: url('fonts/Exo2-Black.ttf');
-	src: local('Exo2-Black'),
-	url('fonts/Exo2-Black.ttf') format('ttf'),
-	
+	font-family: 'RobotoCondensed';
+	src: url('fonts/RobotoCondensed.ttf');
+	src: local('RobotoCondensed'),
+	url('fonts/RobotoCondensed-Regular.ttf') format('truetype'),
+	url('fonts/RobotoCondensed-Light.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Cinzel-Regular';
-	src: url('fonts/Cinzel-Regular.ttf');
-	src: local('Cinzel-Regular'),
-	url('fonts/Cinzel-Regular.ttf') format('ttf'),
-	
+	font-family: 'PlayfairDisplay';
+	src: url('fonts/PlayfairDisplay.ttf');
+	src: local('PlayfairDisplay'),
+	url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+	url('fonts/PlayfairDisplay-Light.ttf') format('truetype');
 }
-@font-face {
-	font-family: 'Domine-Bold';
-	src: url('fonts/Domine-Bold.ttf');
-	src: local('Domine-Bold'),
-	url('fonts/Domine-Bold.ttf') format('ttf'),
-	
-}
-@font-face {
-	font-family: 'Oswald-SemiBold';
-	src: url('fonts/Oswald-SemiBold.ttf');
-	src: local('Oswald-SemiBold'),
-	url('fonts/Oswald-SemiBold.ttf') format('ttf'),
-	
-}
+
 .all-items{
 	overflow-x:hidden;
 	font-family: 'GothamBook';
@@ -81,34 +68,41 @@ header{
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0rem 1rem;
+	background-image: linear-gradient(to left, #936416, #984841, #76425d, #49425a, #343a40);
 }
 
-.bg-light {
-    background-color: rgba(112,195,242,0.91)!important;
+.navbar-brand{
+	
+		
 }
+
 .header-items{
 	padding-right: 3.5rem;
+	pading-top: 0.5rem;
+}
+.navbar-nav{
+	    padding-top: 0.5rem;
 }
 .header-items>ul>li{
 	padding:.25rem 1rem;
-	font-size: 1.25rem;
-	font-weight: 600;
-	font-family: Cinzel-Regular;
-	
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: GothamBook;
+	border-bottom: 0.5rem;
 }
 .header-items>ul>li:hover{
-	background-color: rgba(246,139,54,1.00);
-	border-radius: 5%;
+	border-bottom: solid medium rgba(255,245,245,1.00);
 	color: white;
 }
+.header-items>ul>li.active{
+	border-bottom: solid medium rgba(255,245,245,1.00);
+	color: white;
+}
+
 
 .logo{
 	max-height: 3rem;
 	padding-left: 4rem;
-}
-
-.navbar-nav>li>a>h5{
-	font-size: 1.5rem;
 }
 
 /*-------------------------dropdown-----------*/
@@ -116,11 +110,16 @@ header{
 .dropdown-menu{
 	margin-top: 0rem;
 	padding: 0rem;
+	border:.2rem;
 }
+
 .dropdown-submenu>ul{
 	padding: 0rem;
 	margin: 0rem;
 	border: 0rem;
+	background-color: #343a40;
+	color:#fff;
+	
 }
 .dropdown-submenu>ul>li{
 	list-style: none;
@@ -132,22 +131,23 @@ header{
 }
 .dropdown-submenu>ul>li>a{
 	text-decoration: none;
-	color: #1f1f1f;
+	color: #FFF;
+}
+.dropdown-submenu>ul>li:hover{
+	background-color:#1f1f1f;
 }
 .dropdown-submenu>ul>li>ul>li{
 	list-style: none;
 	padding-left: .5rem;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
-	width: 10rem;
+	padding-right: .5rem;
+	width: 12rem;
 	position:relative;
 }
-.dropdown-submenu>ul>li>ul>li>a{
-	text-decoration: none;
-	color: #1f1f1f;
-}
+
 .dropdown-submenu>ul>li>ul{
-	transition: all 0.3s;
+	transition: all 0.6s;
 	opacity: 0;
 	visibility:hidden;
 	position: absolute;
@@ -159,21 +159,22 @@ header{
 	visibility: visible;
 	z-index: 100;
 }
-.dropdown-submenu>ul>li:hover{
-	background-color:#1f1f1f;
-}
+
 .dropdown-submenu>ul>li:hover>a{
 	background-color:#1f1f1f;
 	color:white;
 }
 .dropdown-submenu>ul>li>ul>li{
-	background-color: #FFFFFF;
+	background-color:#343a40;
+	color:#fff;;
+}.dropdown-submenu>ul>li>ul>li>a{
+	text-decoration: none;
+	color: #fff;
 }
 .dropdown-submenu>ul>li>ul>li:hover{
 	background-color: #1f1f1f;
 }
 .dropdown-submenu>ul>li>ul>li:hover>a{
-	background-color: #1f1f1f;
 	color: white;
 }
 
@@ -185,11 +186,11 @@ Carousel Area
 */
 
 .carousel-inner{
-	max-height: 47.5rem;
+	max-height: 46.5rem;
 }
 .single_carousel>img{
-	height: 47.5rem;
-	padding-top: 3.8rem;
+	height: 46.5rem;
+	padding-top: 3.4rem;
 	
 }
 
@@ -198,21 +199,25 @@ Carousel Area
 Latest Prodct Area
 ==============================*/
 .product_area{
-	background-image: url(images/bg/bg1.jpg);
+	background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.5) 10%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url(images/bg/bg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	
 }
+
 .multi_carousel_area{
-	background: rgba(237,234,234,0.65);
+	padding-left: 3rem;
+	padding-right: 1.5rem;
 }
+
 .latest-product-head{
-	padding-top: 10rem;
-	padding-bottom: 3rem;
+	padding-top: 12rem;
+	padding-bottom: 8rem;
 	text-align: center;
 }
 .latest-product-head>h1 {
+	font-family: 'Playfair Display', serif;
    background-color: #FFFFFF;
     opacity: 1;
     margin-right: 30rem;
@@ -220,9 +225,8 @@ Latest Prodct Area
     line-height: 3.5rem;
     border-radius: .8;
     border: .25rem solid #000000;
-	font-family: Oswald-SemiBold;
 	font-size: 3rem;
-	
+	padding-bottom: .5rem;
 }
 .multi-column-carousel{
 	height:16.875rem;
@@ -241,37 +245,71 @@ Latest Prodct Area
 }
 
 /*==================================
-Product Categories Area
+Wings of Rimex Area
 =====================================*/
-
-.product-category-head{
-	text-align: center;
-	
-	padding-bottom: 3rem;
+.wings_rimex{
+	padding-top: 12rem;
+	padding-bottom: 10rem;
 }
-.product-category-head>h1 {
-    background-color: #FFFFFF;
+.wings_rimex_head{
+	padding-bottom: 5rem;
+	text-align: center;
+}
+.wings_rimex_head>h1 {
+	font-family: 'Playfair Display', serif;
+   background-color: #FFFFFF;
     opacity: 1;
-    margin-right: 30rem;
-    margin-left: 28rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
     line-height: 3.5rem;
     border-radius: .8;
     border: .25rem solid #000000;
-	font-family: Oswald-SemiBold;
 	font-size: 3rem;
-	
+	padding-bottom: .5rem;
 }
-.product-category-image{
-	height:20rem;
-	width:28.75rem;
-	padding-bottom: 1.5rem;
-	
+.text_wings{
+	background-color: #242424;
+	color: #E4E4E4;
+	text-align: center;
+	display: block;
+    height: 20.09rem;
+    line-height:20.09rem;
+    vertical-align: middle;
 }
-.product-category{
-	padding-bottom: 5rem;
-	background: rgba(237,234,234,0.65);
-	padding-top: 10rem;
+.text_wings>a>h4{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	display: block;
+    height: 10.09rem;
+    line-height: 18.09rem;
+    vertical-align: middle;
 }
+.text_wings>a:link{
+	text-decoration: none;
+	color:#E6E6E6;
+}
+.text_wings>a>h4:hover{
+	font-size:1.8rem;
+	transition: all .75s;
+}
+.img_wings{
+	overflow:hidden;
+	transition-duration:all 5s;
+}
+.img_wings:hover img{
+	transform: scale(1.2);
+	overflow: hidden;
+	transition-duration: 1s;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto>img {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 
 /*===================================
 User Review Area
@@ -344,16 +382,17 @@ Owner say Area starts
 Footer Area Starts
 =====================================*/
 .footer{
-	background-color: #2F2F2F;
+	background-image: linear-gradient(to left, rgba(210,130,0,0.7514356084230567) 0%, rgba(2,2,35,1) 50%, rgba(4,175,209,0.7290266448376226) 100%), url(images/bg/5701.jpg);
+	background-size: cover;
 	
 }
 .footer-list{
-	 padding-top: 3rem;
+	 padding-top: 4rem;
 }
 .footer-list>li{
 	list-style: none;
 	padding-top:1rem;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-family: 'RobotoCondensed';
 }
 .footer-list>li>a{
 	text-decoration: none;
@@ -376,13 +415,14 @@ Footer Area Starts
 	padding-right: .5rem;
 }
 .follow-us>ul{
-	
+	font-family: 'RobotoCondensed';
 	text-align: center;
 	font-size: 1.75rem;
 }
 .right>h6{
 	color:white;
 	text-align:center;
+	font-family: 'RobotoCondensed';
 }
 
 
