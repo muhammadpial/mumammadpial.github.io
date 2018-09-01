@@ -23,7 +23,6 @@
 .all-items{
 	overflow-x:hidden;
 	font-family: 'GothamBook';
-	background:rgba(239,239,239,1.00);
 }
 
 /*
@@ -99,13 +98,8 @@ header{
 	border-bottom: solid medium rgba(255,245,245,1.00);
 	color: white;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
-}
 
-.navbar-light .navbar-nav .nav-link {
-    color: #000;
-}
+
 .logo{
 	max-height: 2.5rem;
 	padding-left: 4rem;
@@ -183,90 +177,27 @@ header{
 .dropdown-submenu>ul>li>ul>li:hover>a{
 	color: white;
 }
-/*=================================
-Container Pic Area
-===================================*/
-.container-pic{
-	background-image: url(images/bg/bg-3.jpg);
-	background-color:rgba(27,115,151,0.20);  
-	height: 30rem;
-	background-size:contain;
-	background-repeat: no-repeat;
-	padding-top: 5rem;
-	background-attachment: fixed;
-	
-}
-.container-pic>h1 {
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    font-size: 4rem;
-    border: solid 4px #000;
-    margin: 17.5rem 3rem 0rem 3rem;
-	background: rgba(237,237,237,0.50);
-	
-}
-
-/*.container-pic>h4{
-	font-weight: 600;
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    background: rgba(32,32,32,0.37);
-    border: solid 4px white;
-    margin: .5rem 3rem 0rem 3rem;
-}*/
-/*==================================
-Side Bar Area
-===============================*/
 
 
-.side-nav{
-	padding-top: 4rem;
-	padding-bottom: 5rem;
-}
 
-.container {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.product-list-img {
-    margin-bottom: 4rem;
-    overflow: hidden;
-    
-}
-.product-list-img:hover img{
-	transform: scale(1.4);
-	overflow: hidden;
-	transition-duration: .75s;
-}
-.product-list-img>a>img{
-	height: 20rem;
-	    
-}
-.carousel-caption {
-    position: relative;
-    right: 0%;
-    bottom: 0rem;
-    left: 0%;
-    z-index: 10;
-    padding-top: .5rem;
-    padding-bottom: 1.2rem;
-    color: #000;
-    text-align: center;
-    background-color: #fffefe;
-    width: 100%;
-    font-family: 'PlayfairDisplay';
-	height: 10rem;
-}
 
-.carousel-caption>a{
-	text-decoration: none;
-	color:darkslategray;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*======================================
@@ -275,8 +206,6 @@ Footer Area Starts
 .footer{
 	background-image: linear-gradient(to left, rgba(210,130,0,0.7514356084230567) 0%, rgba(2,2,35,1) 50%, rgba(4,175,209,0.7290266448376226) 100%), url(images/bg/5701.jpg);
 	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 	
 }
 .footer-list{
@@ -317,5 +246,3 @@ Footer Area Starts
 	text-align:center;
 	font-family: 'RobotoCondensed';
 }
-
-

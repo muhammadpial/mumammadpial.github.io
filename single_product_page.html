@@ -13,13 +13,13 @@
   </head>
   <body>
     
-
+	<div class="all-items">
      				<!------------------------------Header Area Starts------------------------------->
   
   			<header class="container-fluid">
    
 						 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-						  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo/logo.png" alt="logo">
+						  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo/RIMEX-LOGO.png" alt="logo">
 						  </a>
 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -29,14 +29,14 @@
 							
 						  	<div class="header-items ml-auto my-auto">
 							  	<ul class="navbar-nav">
-								  <li class="active">
+								  <li class="">
 									<a class="nav-link" href="index.html">Home</a>
 								  </li>
 								  <li>
 									<a class="nav-link" href="#">About Us</a>
 								  </li>
 								  <li class="dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									  Products
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,7 +45,7 @@
 											<ul>
 												
 												<li>
-													<a href="productpage.html">RIMEX Shipping</a>
+													<a href="shipping.html">RIMEX Shipping</a>
 													<ul>
 														<li><a href="productpage.html">FCL/LCL</a></li>
 														<li><a href="productpage.html">Door to Door</a></li>
@@ -57,8 +57,8 @@
 												<li>
 													<a href="productpage.html">RIMEX Genuine Parts</a>
 													<ul>
-														<li><a href="productpage.html">Air Filter</a></li>
-														<li><a href="productpage.html">Oil Filter</a></li>
+														<li><a href="air_filter.html"Air Filter</a></li>
+														<li><a href="oil_filter.html"Oil Filter</a></li>
 														<li><a href="productpage.html">Cabin Filter</a></li>
 													</ul>
 												</li>
@@ -108,53 +108,11 @@
   			
   			
   			
-  			<div class="side-nav">
-  				<div class="container-fluid">
-  					<div class="row">
-  						<div class="col-lg-3">
-  							<div class="side-bar">
-								
-								<ul>
-									<li><a href="productpage.html"><h2>Products</h2></a></li>
-									<li>
-										<a href="#">RIMEX Shipping</a>
-										<ul>
-											<li><a href="#">FCL/LCL</a></li>
-											<li><a href="#">Door to Door</a></li>
-											<li><a href="#">LC Finance</a></li>
-											<li><a href="#">Product Sourcing</a></li>
-											<li><a href="#">Product Inspection</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">RIMEX Genuine Parts</a>
-										<ul>
-											<li><a href="#">Air Filter</a></li>
-											<li><a href="#">Oil Filter</a></li>
-											<li><a href="#">Cabin Filter</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">RIMEX Electrical Accessories</a>
-										<ul>
-											<li><a href="#">Excellent Series</a></li>
-											<li><a href="#">Ellite Series</a></li>
-											<li><a href="#">Elegant Series</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">RIMEX Travels</a>
-										<ul>
-											<li><a href="#">Ticket and Visa</a></li>
-											<li><a href="#">Tourist Guide</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>	
-  						</div><!------/.col------>
-  						
+  			<div class="main-body">
+  				<div class="container">
+  					<div class="row"> 						
   						<!----------------------main body area---------------------------->
-  						<div class="col-lg-6">
+  						<div class="col-lg-8">
   						
   						
   							<div  class="product-title">
@@ -163,7 +121,7 @@
   							</div>
   							
   							<div class="image-gallery">
-									<img id="mainImage" src="images/product categories/rimex_genuine_parts/oil/38010/1.jpg"/>
+									<img id="mainImage" class="img-fluid" src="images/product categories/rimex_genuine_parts/oil/38010/1.jpg"/>
 									<br />
 									<div id="divId" onclick="changeImageOnClick(event)">
 										<img class="imgStyle" src="images/product categories/rimex_genuine_parts/oil/38010/1.jpg" />
@@ -180,7 +138,7 @@
 							
   						</div><!----/.col---->
   						
-  						<div class="col-lg-3">
+  						<div class="col-lg-4">
   							<div class="product-spec">
   								<h4>Product Specification</h4>
   								<div><hr></div>
@@ -263,7 +221,7 @@
 										</ul>
 									</div>
 									<div class="col-sm-4">
-										<a href="#" class="footer-logo"><img src="images/logo/Untitled-2.png" alt="Logo"></a>
+										<a href="#" class="footer-logo"><img class="img-fluid" src="images/logo/RIMEX-LOGO.png" alt="Logo"></a>
 									</div>
 									<div class="col-sm-4">
 									  <div class="follow-us">
@@ -288,6 +246,8 @@
 							
 							
 			<!--------------------------------------------Footer Area Starts----------------------------------------->
+		
+		</div><!----------------/.all-items--------------->
 			
 			<script type="text/javascript">
 
@@ -299,12 +259,12 @@
             images[i].onmouseover = function ()
             {
                 this.style.cursor = 'hand';
-                this.style.borderColor = '#1B7397';
+                this.style.borderColor = '#fff';
             }
             images[i].onmouseout = function ()
             {
                 this.style.cursor = 'pointer';
-                this.style.borderColor = 'rgba(235,169,28,1.00)';
+                this.style.borderColor = '#000';
             }
         }
 

@@ -197,25 +197,26 @@ Container Pic Area
 	
 }
 .container-pic>h1 {
-    font-weight: 600;
+    font-weight: 900;
     color: #000;
     text-align: center;
     font-size: 4rem;
     border: solid 4px #000;
-    margin: 17.5rem 3rem 0rem 3rem;
+    margin: 16rem 3rem 0rem 3rem;
 	background: rgba(237,237,237,0.50);
 	
 }
 
-/*.container-pic>h4{
+.container-pic>h4{
 	font-weight: 600;
     color: white;
     text-align: center;
+    /* text-decoration-style: double; */
     font-size: 1.5rem;
     background: rgba(32,32,32,0.37);
     border: solid 4px white;
     margin: .5rem 3rem 0rem 3rem;
-}*/
+}
 /*==================================
 Side Bar Area
 ===============================*/

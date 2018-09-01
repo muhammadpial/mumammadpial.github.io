@@ -101,7 +101,7 @@ header{
 
 
 .logo{
-	max-height: 3rem;
+	max-height: 2.5rem;
 	padding-left: 4rem;
 }
 
@@ -339,7 +339,7 @@ Footer Area Starts
 .footer-logo>img{
 	text-align: center;
 	padding-top:8rem;
-	padding-left: 3rem;
+	padding-left: 0rem;
 }
 .follow-us>h4{
 	padding-top:8rem;
