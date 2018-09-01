@@ -322,6 +322,7 @@ Footer Area Starts
 .footer{
 	background-image: linear-gradient(to left, rgba(210,130,0,0.7514356084230567) 0%, rgba(2,2,35,1) 50%, rgba(4,175,209,0.7290266448376226) 100%), url(images/bg/5701.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 	
 }
 .footer-list{
